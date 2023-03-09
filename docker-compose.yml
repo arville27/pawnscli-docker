@@ -1,7 +1,8 @@
 version: "3"
 
 services:
-  pawns:
+  pawnscli:
+    container_name: pawnscli
     image: arville27/pawnscli
     build: .
     environment:
