@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  pawns:
+    image: arville27/pawnscli
+    build: .
+    environment:
+      - "EMAIL=${EMAIL}"
+      - "PASSWORD=${PASSWORD}"
+      - "DEVICE_NAME=${DEVICE_NAME}"
+    restart: always
